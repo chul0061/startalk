@@ -1,12 +1,12 @@
 .user-component {
   justify-content: space-between;
+  z-index: 2;
 }
 
 .user-component,
 .user-component__column:first-child {
   display: flex;
   align-items: center;
-  z-index: 2;
 }
 
 .user-component__avartar {
