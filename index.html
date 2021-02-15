@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page-Star Talk</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>21:29</span>
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to Star Talk</h1>
+      <p class="welcome-header__text">
+        If you have a Star Talk Account, log in with your email or phone number.
+      </p>
+      <p class="welcome-header__text">
+        (It's fake so write whatever you want!)
+      </p>
+    </header>
+
+    <form action="friends.html" method="get" id="login-form">
+      <input
+        name="username"
+        type="text"
+        required
+        placeholder="Email or phone number"
+      />
+      <input name="password" type="password" required placeholder="Password" />
+      <input type="submit" value="Log in" />
+      <a href="#">Find StarTalk Account or Password</a>
+    </form>
+
+    <div id="no-mobile">
+      <span>Your screen is too big!</span>
+    </div>
+
+    <div class="stars-bg">
+      <div class="stars__star"></div>
+      <div class="stars__star"></div>
+      <div class="stars__star"></div>
+      <div class="stars__star"></div>
+      <div class="stars__star"></div>
+      <div class="stars__star"></div>
+      <div class="stars__star"></div>
+      <div class="stars__star"></div>
+      <div class="stars__star"></div>
+      <div class="stars__star"></div>
+      <div class="stars__star"></div>
+      <div class="stars__star"></div>
+      <div class="stars__star"></div>
+      <div class="stars__star"></div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
