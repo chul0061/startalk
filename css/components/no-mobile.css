@@ -6,6 +6,7 @@
   background-color: #3c4657;
   color: var(--yellow);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 32px;
@@ -16,4 +17,44 @@
   #no-mobile {
     display: none;
   }
+}
+
+@keyframes movingleft {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes movingright {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.no-mobile__arrow {
+  margin-top: 50px;
+}
+
+.no-mobile__arrow i {
+  margin: 0px 90px;
+}
+
+.no-mobile__arrow .fa-arrow-right {
+  animation: movingleft 1s ease-in-out infinite;
+}
+
+.no-mobile__arrow .fa-arrow-left {
+  animation: movingright 1s ease-in-out infinite;
 }
